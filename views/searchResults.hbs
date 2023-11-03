@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results</title>
+</head>
+<body>
+  <h1>Search Results</h1>
+  {{#if sales}}
+    <ul>
+      {{#each sales}}
+        <li>Invoice ID: {{this.[Invoice ID]}}</li>
+        <li>Branch: {{this.Branch}}</li>
+        <li>City: {{this.City}}</li>
+        <li>Customer Type: {{this.[Customer type]}}</li>
+        <li>Product Line: {{this.[Product line]}}</li>
+        <li>Name: {{this.name}}</li>
+        <li>Image: {{this.image}}</li>
+        <li>Unit Price: {{this.[Unit price]}}</li>
+        <li>Quantity: {{this.Quantity}}</li>
+        <li>Tax (5%): {{this.[Tax 5%]}}</li>
+        <li>Total: {{this.Total}}</li>
+        <li>Date: {{this.Date}}</li>
+        <li>Time: {{this.Time}}</li>
+        <li>Payment: {{this.Payment}}</li>
+        <li>COGS: {{this.cogs}}</li>
+        <li>Gross Income: {{this.[gross income]}}</li>
+        <li>Rating: {{this.Rating}}</li>
+        <!-- Display other fields as needed -->
+      {{/each}}
+    </ul>
+  {{else}}
+    <p>No matching results found.</p>
+  {{/if}}
+</body>
+</html>

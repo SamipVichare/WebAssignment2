@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+</head>
+<body>
+  <h1>Results</h1>
+  {{#if products.length}}
+    <ul>
+      {{#each products}}
+          <li>Invoice ID: {{this.[Invoice ID]}}</li>
+        <li>Branch: {{this.Branch}}</li>
+        <li>City: {{this.City}}</li>
+        <li>Customer Type: {{this.[Customer type]}}</li>
+        <li>Name: {{this.name}}</li>
+        <li>Rating: {{this.Rating}}</li><br><br>
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <p>No matching products found for the provided Product Line.</p>
+  {{/if}}
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* Reset some default styles for HTML and body elements */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply background color and spacing to the header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the h1 element in the header */
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Apply background color and spacing to the content area */
+.content {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* Apply background color and spacing to the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the footer text */
+.footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Apply global styles as needed for your content */
+/* For example, you can style links, headings, paragraphs, etc. here. */
